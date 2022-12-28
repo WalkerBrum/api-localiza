@@ -19,6 +19,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.send('Olá mundo!');
+})
+
 const PORT = 3000;
 const HOST = '0.0.0.0';
 
